@@ -1,0 +1,27 @@
+body.dark {
+  background-color: #464646;
+  color: rgb(46, 46, 46);
+}
+
+body.dark header {
+  background-color: #111;
+}
+
+body.dark a {
+  color: #f9f9f9;;
+}
+
+body.dark .mode {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+body.dark .mode:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark footer {
+    color: #f9f9f9;
+}
