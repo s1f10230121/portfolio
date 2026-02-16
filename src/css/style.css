@@ -24,17 +24,23 @@ nav a {
 }
 
 .container {
-  display: flex;
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
 section {
-  flex: 1;
   background: white;
-  padding: 40px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
+
+section:last-child {
+  border-bottom: none;
+}
+
 .mode {
   display: block;
   margin-left: auto;
@@ -67,8 +73,34 @@ footer {
   padding: 10px;
 }
 
+.image-box {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+
+  header {
+    padding: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .image-box {
+    height: 160px;
   }
 }
